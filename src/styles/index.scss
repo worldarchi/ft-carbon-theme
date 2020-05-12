@@ -1,0 +1,11 @@
+// This is where your application styles could go.
+
+@media (min-width: 66rem) {
+  .container--homepage .bx--grid {
+    padding-left: 2rem;
+  }
+}
+
+.bx--grid {
+  max-width: unset;
+}

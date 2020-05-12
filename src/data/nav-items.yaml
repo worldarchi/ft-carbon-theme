@@ -1,0 +1,50 @@
+- title: Managed EDI
+  pages:
+    - path: /getting-started
+# - title: Demo
+#   pages:
+#     - path: /demo
+# - title: Gallery
+#   pages:
+#     - path: /gallery
+# - title: Contributions
+#   pages:
+#     - path: /contributions
+- title: Solutions
+  pages:
+    - title: Cloud EDI
+      path: /guides/configuration
+    - title: Carriers
+      path: /guides/MDX
+    - title: Shippers
+      path: /guides/shadowing
+    - title: Brokers/Freight Forwarders
+      path: /guides/styling
+- title: Blockchain
+  pages:
+    - title: Network
+      path: /components/Aside
+    - title: Block Exploer
+      path: /components/Caption
+    - title: Status
+      path: /components/code-blocks
+    - title: MasterNodes
+      path: /components/DoDontExample
+- title: Blog
+  pages:
+    - title: Announcements
+      path: /components/DoDontRow
+    - title: Guides
+      path: /components/FeatureCard
+    - title: Blockchain
+      path: /components/FeedbackDialog
+    - title: Corporate
+      path: /components/GifPlayer
+- title: Contact
+  pages:
+    - title: Contact
+      path: /components/Grid
+    - title: FreightTrustNet
+      path: /components/ImageCard
+    - title: Telegram
+      path: /components/ImageGallery
