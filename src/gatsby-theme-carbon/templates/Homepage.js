@@ -28,6 +28,7 @@ import {
   requestDemoContent,
   requestDemoRow,
   requestDemoActions,
+  contactUs,
 } from "./QuoteContent.module.scss";
 
 import Carbon from "../../images/carbon.jpg";
@@ -156,7 +157,7 @@ const RequestDemoContent = () => (
       </Column>
       <Column className={requestDemoActions} colMd={6} colLg={6}>
         <a>Request Demo</a>
-        <a>Contact Us</a>
+        <a className={contactUs}>Contact Us</a>
       </Column>
     </Row>
   </div>

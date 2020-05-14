@@ -60,6 +60,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   display: block;
+  margin-left: 10px;
 }
 
 .footerContent h5 {
@@ -69,9 +70,24 @@
   color: #000000;
   margin-top: 38px;
   margin-bottom: 24px;
+  margin-left: 10px;
 }
 
 .footerRow > div {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.footerContent h6 {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  
+  color: #000000;
+  width: 200px;
+
+  font-style: normal;
+  font-weight: normal;
+
+  margin-top: 35px;
 }

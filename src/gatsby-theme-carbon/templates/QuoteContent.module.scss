@@ -52,6 +52,7 @@ margin-bottom: 48px;
   text-align: center;
   
   color: #FFFFFF;
+  border: 1px solid #000000;
 
   padding: 13px 40px;
 
@@ -64,4 +65,10 @@ margin-bottom: 48px;
   padding-top: 30px;
   align-items: center;
   padding-left: 10%;
+}
+
+.requestDemoRow a.contactUs {
+  color: #000000;
+  border-radius: 5px;
+  background: transparent;
 }

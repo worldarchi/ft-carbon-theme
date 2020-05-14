@@ -17,6 +17,7 @@ import {
   headerName,
   navLink,
   navLists,
+  navLeftBorder,
   collapsed,
   headerButton,
   switcherButton,
@@ -34,6 +35,7 @@ const Header = ({ children }) => {
           Freight Trust
         </Link>
         <div className={navLists}>
+          <div className={navLeftBorder}></div>
           <Link
             className={navLink}
             to="/"
@@ -53,7 +55,7 @@ const Header = ({ children }) => {
             Blockchain
           </Link>
           <Link
-            className={headerName}
+            className={navLink}
             to="/"
           >
             Corporate

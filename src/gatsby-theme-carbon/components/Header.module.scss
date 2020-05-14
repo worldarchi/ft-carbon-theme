@@ -112,17 +112,31 @@ header.header {
   }
 }
 
+// .headerName {
+//   border-right: 1px solid #3D3D3D;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+// }
+
 .navLists {
-  margin-left: 100px;
+  margin-left: 130px;
+  display: flex;
 }
 
 .navLink {
   margin-left: 32px; 
   text-decoration: none;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 24px;
   letter-spacing: 0.16px;
   
   color: #C6C6C6;
   
+}
+
+.navLeftBorder {
+  width: 1px;
+  background: #3D3D3D;
+  height: 24px;
+  display: inline-block;
 }

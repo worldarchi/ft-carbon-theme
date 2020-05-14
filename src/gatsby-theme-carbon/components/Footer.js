@@ -62,6 +62,7 @@ const CustomFooter = () => <div className={footerContent}>
       <a>Block Explorer</a>
       <a>Block Explorer</a>
       <a>Block Explorer</a>
+      <h6>@ 2010 - 2020  Privacy - Terms</h6>
     </Column>
     <Column colMd={2} colLg={2}>
       <h5>DOCUMENTS</h5>
