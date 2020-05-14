@@ -11,11 +11,15 @@ const StyledGrid = styled(Grid)`
 `;
 
 const HomepageBanner = ({ image, position, renderText }) => (
-  <StyledGrid className={grid} position={position} image={image}>
+  <div className={grid} position={position}>
     <Row className={row}>
-      <Column className={column}>{renderText()}</Column>
+      <Column className={column} colMd={5} colLg={5}>{renderText()}</Column>
+      <Column className={column} colMd={1} colLg={1}></Column>
+      <Column className={column} colMd={6} colLg={6}>
+        <img alt="img" src={image}/>
+      </Column>
     </Row>
-  </StyledGrid>
+  </div>
 );
 
 export default HomepageBanner;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
+import { HomepageBanner, HomepageCallout, Grid, Row, Column } from 'gatsby-theme-carbon';
 import Carbon from '../../images/carbon.jpg';
 
 import Layout from 'gatsby-theme-carbon/src/components/Layout';
@@ -8,7 +8,7 @@ import Main from 'gatsby-theme-carbon/src/components/Main';
 import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
 import NextPrevious from 'gatsby-theme-carbon/src/components/NextPrevious';
 
-import { mainContent } from './Homepage.module.scss';
+import { mainContent, posts } from './Homepage.module.scss';
 
 
 const Homepage = ({
@@ -16,6 +16,9 @@ const Homepage = ({
   Banner,
   FirstCallout,
   SecondCallout,
+  BlogSection,
+  RequestDemoSection,
+  QuoteSection,
   location,
   pageContext,
 }) => {
@@ -38,10 +41,15 @@ const Homepage = ({
         <p>
           From 100% Complete Digital Workflow to Supporting Paper-based documents, the Freight Trust Platform works for 100% of your customers, even hazardous material shippments or ITAR Export Controlled Goods.
         </p>
+        <a href="#">LEARN MORE ABOUT OUR EDI SERVICE</a>
       </Main>
-      {FirstCallout}
-      {SecondCallout}
-      <NextPrevious isHomepage location={location} pageContext={pageContext} />
+
+      <div className={posts}>
+        {BlogSection}
+      </div>
+
+      {RequestDemoSection}
+      {QuoteSection}
       <BackToTopBtn />
     </Layout>
   );

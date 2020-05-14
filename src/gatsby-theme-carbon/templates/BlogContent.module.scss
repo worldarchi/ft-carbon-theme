@@ -1,0 +1,101 @@
+.blogContent {
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.blogContentCol1 {
+  background: #222222;
+}
+
+.blogContentCol2 {
+  background: black;
+  color: white;
+  padding: 54px 78px;
+}
+
+.blogContentCol2 h4 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.blogContentCol2 h1 {  
+  font-size: 48px;
+  line-height: 56px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.blogContentCol2 h3 {  
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+
+.blogCards {
+  margin-top: 40px;
+  font-family: IBM Plex Sans;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.blogCards h1 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #F4F4F4;
+}
+
+.blogCards p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.16px;
+  color: #F4F4F4;
+  margin-top: 20px;
+  width: 368px;
+}
+
+.actionLink {
+  background: #0F62FE;
+  padding: 15px;
+  width: 45%;
+  height: 64px;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  letter-spacing: 0.16px;
+}
+
+.blogCards .closeIcon {
+  position: absolute;
+  top: 19px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.closeIcon svg {
+  fill: #F4F4F4;
+}
+
+.blogCard1 .actionLink {
+  left: 0px;
+}
+
+.blogCard2 .actionLink {
+  right: 0px;
+}
+
+.blogCard1, .blogCard2 {
+  height: 290px;
+  background: #222222;
+  padding-top: 20px;
+  position: relative;
+}

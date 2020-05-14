@@ -1,0 +1,67 @@
+.quoteContent {
+  height: 600px;
+  padding: 150px 200px;
+}
+
+.quoteRow h1 {
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+.quoteRow h3 {
+  font-size: 18px;
+line-height: 25px;
+color: #FFFFFF;
+margin-bottom: 48px;
+}
+
+.quoteRow p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.requestDemoContent {
+  padding: 75px 120px;
+  background: #F2F2F2;
+}
+
+.requestDemoRow h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.requestDemoRow h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.requestDemoRow a {
+  background: #000000;
+  border-radius: 5px;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  
+  color: #FFFFFF;
+
+  padding: 13px 40px;
+
+  cursor: pointer;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.requestDemoActions {
+  padding-top: 30px;
+  align-items: center;
+  padding-left: 10%;
+}

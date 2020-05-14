@@ -12,16 +12,15 @@
   margin: 0px !important;
 }
 
-.row h1 {
-  padding: 2rem 0 !important;
-}
 
 .grid {
   background-size: cover;
-  height: 90vh;
+  height: 700px;
   // max-height: 560px;
   width: 100%;
   max-width: 100%;
+
+  background-color: white;
 
   @include carbon--breakpoint('lg') {
     padding-left: 0px !important;
