@@ -1,37 +1,37 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+
 .blogContent {
   width: 100%;
-  font-style: normal;
-  font-weight: normal;
   margin-left: 0px;
   margin-right: 0px;
 }
 
 .blogContentCol1 {
-  background: #222222;
+  background: $ui-background;
 }
 
 .blogContentCol2 {
-  background: black;
-  color: white;
-  padding: 54px 78px;
+  background: $ui-01;
+  padding: $layout-04;
 }
 
 .blogContentCol2 h4 {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 20px;
+  @include carbon--type-style('productive-heading-01');
+  margin-bottom: $spacing-05;
 }
 
 .blogContentCol2 h1 {  
-  font-size: 48px;
-  line-height: 56px;
-  height: 200px;
-  margin-bottom: 20px;
+  @include carbon--type-style('productive-heading-06');
+  margin-bottom: $spacing-09;
 }
 
-.blogContentCol2 h3 {  
-  font-size: 18px;
-  line-height: 25px;
+.blogContentCol2 h3 {
+  @include carbon--type-style('productive-heading-03');
 }
 
 
@@ -44,34 +44,20 @@
 }
 
 .blogCards h1 {
-  font-size: 20px;
-  line-height: 26px;
-  color: #F4F4F4;
+  @include carbon--type-style('productive-heading-03');
+  color: $text-01;
 }
 
 .blogCards p {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.16px;
-  color: #F4F4F4;
-  margin-top: 20px;
+  @include carbon--type-style('body-long-01');
+  color: $text-01;
+  margin-top: $layout-02;
   width: 368px;
 }
 
 .actionLink {
-  background: #0F62FE;
-  padding: 15px;
-  width: 45%;
-  height: 64px;
-  position: absolute;
+  position: absolute !important;
   bottom: 0px;
-  color: white;
-
-  font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
-
-  letter-spacing: 0.16px;
 }
 
 .blogCards .closeIcon {

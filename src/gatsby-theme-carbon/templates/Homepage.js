@@ -31,6 +31,8 @@ import {
   contactUs,
 } from "./QuoteContent.module.scss";
 
+import { Button } from "carbon-components-react";
+
 import Carbon from "../../images/carbon.jpg";
 import Freight1 from "../../images/freight1.png";
 import { Close20 } from "@carbon/icons-react";
@@ -49,24 +51,7 @@ const FirstLeftText = () => (
 
 const FirstRightText = () => (
   <div>
-    <img src={Freight1} alt="freight1" />
   </div>
-);
-
-const SecondLeftText = () => (
-  <div>
-    <img src={Freight1} alt="freight1" />
-  </div>
-);
-
-const SecondRightText = () => (
-  <span className={rowText}>
-    <h1>Clear and Transparent Pricing</h1>
-    <p>
-      Freight Trust Platform is designed to create a seamless communication
-      workflow. Think of it as a Control Tower, EDI and TMS rolled into one.
-    </p>
-  </span>
 );
 
 const BannerText = () => (
@@ -78,7 +63,7 @@ const BannerText = () => (
       communications platform that integrates with your Transportation
       Management System, Accounting, Dispatching, ELD, & more.
     </p>
-    <a href="#">Start free trial</a>
+    <Button href="#" kind='secondary'>Start free trial</Button>
   </div>
 );
 
@@ -86,7 +71,7 @@ const BlogCard = ({headerText, contentText, actionText}) => (
   <div>
     <h1>{headerText}</h1>
     <p>{contentText}</p>
-    <span className={actionLink}>{actionText}</span>
+    <Button className={actionLink}>{actionText}</Button>
     <span className={closeIcon}>
       <Close20 />
     </span>
@@ -142,7 +127,6 @@ const QuoteContent = () => (
       </Column>
       <Column colMd={1} colLg={1}></Column>
       <Column colMd={5} colLg={5}>
-        <img src={Freight1} alt="freight1" />
       </Column>
     </Row>
   </div>
@@ -156,8 +140,8 @@ const RequestDemoContent = () => (
         <h2>Sign up or contact us</h2>
       </Column>
       <Column className={requestDemoActions} colMd={6} colLg={6}>
-        <a>Request Demo</a>
-        <a className={contactUs}>Contact Us</a>
+        <Button href="#" kind='secondary'>Request Demo</Button>
+        <Button href="#" kind='tertiary'>Contact Us</Button>
       </Column>
     </Row>
   </div>
@@ -165,21 +149,13 @@ const RequestDemoContent = () => (
 
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} image={Freight1} />,
+  Banner: <HomepageBanner renderText={BannerText} />,
   FirstCallout: (
     <HomepageCallout
       backgroundColor="#16a085"
       color="white"
       leftText={FirstLeftText}
       rightText={FirstRightText}
-    />
-  ),
-  SecondCallout: (
-    <HomepageCallout
-      leftText={SecondLeftText}
-      rightText={SecondRightText}
-      color="white"
-      backgroundColor="#061f80"
     />
   ),
   BlogSection: <BlogContent />,

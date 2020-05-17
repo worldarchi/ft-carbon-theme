@@ -16,7 +16,10 @@ const HomepageBanner = ({ image, position, renderText }) => (
       <Column className={column} colMd={5} colLg={5}>{renderText()}</Column>
       <Column className={column} colMd={1} colLg={1}></Column>
       <Column className={column} colMd={6} colLg={6}>
-        <img alt="img" src={image}/>
+        {
+          image &&
+          <img alt="img" src={image}/>
+        }
       </Column>
     </Row>
   </div>

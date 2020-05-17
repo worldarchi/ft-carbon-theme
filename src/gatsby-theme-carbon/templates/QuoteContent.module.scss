@@ -1,74 +1,63 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
 .quoteContent {
   height: 600px;
   padding: 150px 200px;
+
+  background-color: $ui-03;
 }
 
 .quoteRow h1 {
-  font-size: 32px;
-  line-height: 37px;
-  color: #FFFFFF;
-  margin-bottom: 24px;
+
+  @include carbon--type-style('productive-heading-05');
+  color: $text-04;
+  margin-bottom: $spacing-06;
 }
 
 .quoteRow h3 {
-  font-size: 18px;
-line-height: 25px;
-color: #FFFFFF;
-margin-bottom: 48px;
+
+  @include carbon--type-style('productive-heading-03');
+  color: $text-04;
+  margin-bottom: $spacing-09;
 }
 
 .quoteRow p {
   font-size: 14px;
   line-height: 20px;
   color: #FFFFFF;
+
+  @include carbon--type-style('body-long-01');
+  color: $text-04;
 }
 
 .requestDemoContent {
   padding: 75px 120px;
-  background: #F2F2F2;
+  background: $ui-background;
 }
 
 .requestDemoRow h1 {
   text-align: center;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 45px;
-  color: #000000;
+  color: $text-04;
+  @include carbon--type-style('productive-heading-05');
 }
 
 .requestDemoRow h2 {
   text-align: center;
-  font-size: 32px;
-  line-height: 45px;
-  color: #000000;
-}
-
-.requestDemoRow a {
-  background: #000000;
-  border-radius: 5px;
-
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
-  
-  color: #FFFFFF;
-  border: 1px solid #000000;
-
-  padding: 13px 40px;
-
-  cursor: pointer;
-  margin-top: 100px;
-  margin-left: 20px;
+  color: $text-02;
+  @include carbon--type-style('productive-heading-05');
 }
 
 .requestDemoActions {
   padding-top: 30px;
-  align-items: center;
   padding-left: 10%;
+  text-align: center;
 }
 
-.requestDemoRow a.contactUs {
-  color: #000000;
-  border-radius: 5px;
-  background: transparent;
+.requestDemoRow a {
+  margin-left: $spacing-05;
 }

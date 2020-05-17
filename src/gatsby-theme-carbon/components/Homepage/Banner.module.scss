@@ -1,3 +1,12 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+// import Carbon styles here
+@import "carbon-components/scss/globals/scss/styles.scss";
+
 .column {
   @include carbon--type-style('display-01');
   color: $inverse-01;
@@ -15,12 +24,15 @@
 
 .grid {
   background-size: cover;
-  height: 700px;
   // max-height: 560px;
   width: 100%;
   max-width: 100%;
 
-  background-color: white;
+  background: $ui-background;
+  color: $ui-05;
+
+  padding-top: $layout-07;
+  padding-bottom: $layout-07;
 
   @include carbon--breakpoint('lg') {
     padding-left: 0px !important;

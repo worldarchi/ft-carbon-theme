@@ -9,7 +9,7 @@ import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
 import NextPrevious from 'gatsby-theme-carbon/src/components/NextPrevious';
 
 import { mainContent, posts } from './Homepage.module.scss';
-
+import { Button } from "carbon-components-react";
 
 const Homepage = ({
   children,
@@ -41,7 +41,8 @@ const Homepage = ({
         <p>
           From 100% Complete Digital Workflow to Supporting Paper-based documents, the Freight Trust Platform works for 100% of your customers, even hazardous material shippments or ITAR Export Controlled Goods.
         </p>
-        <a href="#">LEARN MORE ABOUT OUR EDI SERVICE</a>
+        <Button kind='secondary' href="#">LEARN MORE ABOUT OUR EDI SERVICE</Button>
+        {/* <a href="#">LEARN MORE ABOUT OUR EDI SERVICE</a> */}
       </Main>
 
       <div className={posts}>

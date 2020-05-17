@@ -1,50 +1,37 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
 .footerContent {
-  background: #FFFFFF;
   padding: 30px 85px;
-  color: #000000;
-  font-family: Roboto;
-  font-style: normal;
+
+  background: $ui-background;
+  color: $text-04;
 }
 
 .footerContent h1 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height */
 
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #000000;
-  margin-top: 30px;
+  @include carbon--type-style('productive-heading-03');
+  margin-bottom: $spacing-07;
+  margin-top: $spacing-07;
 }
 
 .footerContent h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height */
-  margin-top: 38px;
-
-  color: #000000;
+  @include carbon--type-style('productive-heading-01');
+  margin-top: $spacing-08;
 }
 
 .footerContent h2 {
-  font-size: 24px;
-  line-height: 34px;
-  /* identical to box height */
-
-  margin-top: 15px;
-
-  color: #000000;
+  @include carbon--type-style('productive-heading-03');
+  margin-top: $spacing-05;
 }
 
 .footerContent p {
-  font-size: 14px;
-  line-height: 20px;
 
-  color: #000000;
-  margin-top: 15px;
+  @include carbon--type-style('body-long-01');
+  margin-top: $spacing-05;
 }
 
 .footerText {
@@ -54,23 +41,21 @@
 .footerContent a {
   width: 100%;
   text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
   cursor: pointer;
-  margin-bottom: 10px;
   display: block;
-  margin-left: 10px;
+
+  color: $text-04;
+
+  @include carbon--type-style('body-short-01');
+  margin-top: $spacing-04;
+  margin-left: $spacing-04;
 }
 
 .footerContent h5 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  margin-top: 38px;
-  margin-bottom: 24px;
-  margin-left: 10px;
+  @include carbon--type-style('productive-heading-01');
+  margin-left: $spacing-04;
+  margin-top: $spacing-08;
+  margin-bottom: $spacing-06;
 }
 
 .footerRow > div {
@@ -79,15 +64,8 @@
 }
 
 .footerContent h6 {
-  font-size: 14px;
-  line-height: 20px;
   text-align: center;
-  
-  color: #000000;
-  width: 200px;
 
-  font-style: normal;
-  font-weight: normal;
-
-  margin-top: 35px;
+  @include carbon--type-style('productive-heading-01');
+  margin-top: $spacing-08;
 }
