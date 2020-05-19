@@ -1,5 +1,5 @@
 import React from 'react';
-import { footerContent, footerRow, footerLinkCol, footerButtonRow, footerLastRow, footerFollowSection } from './Footer.module.scss';
+import { footerContent, footerRow, footerLinkCol, footerButtonCol, footerLastRow, footerFollowSection } from './Footer.module.scss';
 import { Button } from "carbon-components-react";
 import {
   Row,
@@ -8,10 +8,10 @@ import {
 
 const CustomFooter = () => <div className={footerContent}>
   <Row className={footerRow}>
-    <Column colMd={5} colLg={5}>
+    <Column colMd={5} colLg={5} colXl={5}>
       <h1>FREIGHT TRUST</h1>
     </Column>
-    <Column colMd={5} colLg={5}>
+    <Column colMd={5} colLg={5} colXl={6}>
       <div className={footerLinkCol}>
         <div>
           <h5>Lorem Ipsum</h5>
@@ -33,11 +33,11 @@ const CustomFooter = () => <div className={footerContent}>
         </div>
       </div>
     </Column>
-    <Column colMd={2} colLg={2} className={footerButtonRow}>
-      <Button>Register</Button>
-      <Button kind="tertiary">
+    <Column colMd={2} colLg={2} colXl={1} className={footerButtonCol}>
+      <div><Button>Register</Button></div>
+      <div><Button kind="tertiary">
         Log In
-      </Button>
+      </Button></div>
     </Column>
   </Row>
 

@@ -5,7 +5,7 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .footerContent {
-  padding: 30px 85px;
+  padding: $layout-04 $layout-05;
 
   background: $ui-02;
   color: $text-04;
@@ -15,7 +15,7 @@ $carbon--theme: $carbon--theme--g90;
 
   @include carbon--type-style('productive-heading-03');
   margin-bottom: $spacing-07;
-  margin-top: $spacing-07;
+  // margin-top: $spacing-07;
 }
 
 .footerContent h3 {
@@ -54,7 +54,7 @@ $carbon--theme: $carbon--theme--g90;
 .footerContent h5 {
   @include carbon--type-style('productive-heading-01');
   margin-left: $spacing-04;
-  margin-top: $spacing-08;
+  // margin-top: $spacing-08;
   margin-bottom: $spacing-06;
 }
 
@@ -71,14 +71,14 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .footerContent button {
-  margin-top: $spacing-05;
+  margin-bottom: $spacing-05;
   width: 130px;
   float: right;
 }
 
-.footerContent button:first-child {
-  margin-top: $spacing-08;
-}
+// .footerContent button:first-child {
+//   margin-top: $spacing-08;
+// }
 
 .footerRow {
   border-bottom: 1px solid $ui-04;
@@ -109,4 +109,9 @@ $carbon--theme: $carbon--theme--g90;
 
 .footerFollowSection p {
   float: right;
+}
+
+.footerButtonCol div {
+  width: 100%;
+  display: inline-block;
 }
