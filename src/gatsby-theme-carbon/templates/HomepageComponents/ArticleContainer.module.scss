@@ -1,0 +1,20 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+.article-content {
+  padding: $layout-06;
+  background: $ui-01;
+}
+
+.article-content h1 {
+  @include carbon--type-style('productive-heading-06');
+  margin-bottom: $spacing-07;
+}
+
+.article-content h2 {
+  @include carbon--type-style('productive-heading-05');
+  margin-bottom: $layout-06;
+}

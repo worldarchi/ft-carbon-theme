@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import classnames from 'classnames';
+import React from 'react';
 
 const LeftNav = props => {
 

@@ -7,7 +7,7 @@ $carbon--theme: $carbon--theme--g90;
 .footerContent {
   padding: 30px 85px;
 
-  background: $ui-background;
+  background: $ui-02;
   color: $text-04;
 }
 
@@ -68,4 +68,45 @@ $carbon--theme: $carbon--theme--g90;
 
   @include carbon--type-style('productive-heading-01');
   margin-top: $spacing-08;
+}
+
+.footerContent button {
+  margin-top: $spacing-05;
+  width: 130px;
+  float: right;
+}
+
+.footerContent button:first-child {
+  margin-top: $spacing-08;
+}
+
+.footerRow {
+  border-bottom: 1px solid $ui-04;
+  padding-bottom: $layout-04;
+}
+
+.footerLinkCol div {
+  width: 33%;
+}
+
+.footerLinkCol {
+  display: flex;
+}
+
+.footerRow > div {
+  padding: 0px !important;
+}
+
+.footerLastRow {
+  padding-top: $spacing-06;
+  padding-bottom: $spacing-08;
+}
+
+.footerFollowSection{
+  display: flex;
+  align-items: flex-end;
+}
+
+.footerFollowSection p {
+  float: right;
 }

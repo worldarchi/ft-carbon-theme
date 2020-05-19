@@ -1,0 +1,30 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+.snap-content {
+  padding: $layout-06;
+  background: $ui-02;
+}
+
+.snap-content h1 {
+  @include carbon--type-style('productive-heading-06');
+  margin-bottom: $layout-04;
+}
+
+.snap-card h2 {
+  @include carbon--type-style('productive-heading-04');
+  margin-bottom: $spacing-06;
+}
+
+.snap-card p {
+  @include carbon--type-style('body-long-02');
+  margin-bottom: $spacing-07;
+}
+
+.snap-card {
+  margin-bottom: $layout-05;
+  padding-right: $layout-05;
+}

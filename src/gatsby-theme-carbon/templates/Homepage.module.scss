@@ -51,8 +51,9 @@ $carbon--theme: $carbon--theme--g90;
 
 .main-content {
   text-align: center;
-  padding-top: $layout-05;
-  padding-bottom: $layout-05;
+  padding: $layout-07 !important;
+  padding-top: $layout-05 !important;
+  padding-bottom: $layout-05 !important;
   background: $ui-01;
   color: $ui-05;
 }

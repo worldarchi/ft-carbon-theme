@@ -1,25 +1,21 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout, Grid, Row, Column } from 'gatsby-theme-carbon';
+import { HomepageBanner, HomepageCallout, Row, Column } from 'gatsby-theme-carbon';
 import Carbon from '../../images/carbon.jpg';
 
 import Layout from 'gatsby-theme-carbon/src/components/Layout';
 import Main from 'gatsby-theme-carbon/src/components/Main';
 
 import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
-import NextPrevious from 'gatsby-theme-carbon/src/components/NextPrevious';
 
-import { mainContent, posts } from './Homepage.module.scss';
+import { mainContent } from './Homepage.module.scss';
 import { Button } from "carbon-components-react";
 
 const Homepage = ({
-  children,
   Banner,
-  FirstCallout,
-  SecondCallout,
-  BlogSection,
   RequestDemoSection,
-  QuoteSection,
-  location,
+  SnapContent,
+  ArticleContent,
+  SignUpContent,
   pageContext,
 }) => {
   const { frontmatter = {}, titleType } = pageContext;
@@ -41,16 +37,32 @@ const Homepage = ({
         <p>
           From 100% Complete Digital Workflow to Supporting Paper-based documents, the Freight Trust Platform works for 100% of your customers, even hazardous material shippments or ITAR Export Controlled Goods.
         </p>
-        <Button kind='secondary' href="#">LEARN MORE ABOUT OUR EDI SERVICE</Button>
-        {/* <a href="#">LEARN MORE ABOUT OUR EDI SERVICE</a> */}
+        <Row>
+          <Column colMd={2} colLg={2}>
+            <Button kind='secondary' href="#">Lorem Ipsum</Button>
+          </Column>
+          <Column colMd={2} colLg={2}>
+            <Button kind='secondary' href="#">Lorem Ipsum</Button>
+          </Column>
+          <Column colMd={2} colLg={2}>
+            <Button kind='secondary' href="#">Lorem Ipsum</Button>
+          </Column>
+          <Column colMd={2} colLg={2}>
+            <Button kind='secondary' href="#">Lorem Ipsum</Button>
+          </Column>
+          <Column colMd={2} colLg={2}>
+            <Button kind='secondary' href="#">Lorem Ipsum</Button>
+          </Column>
+          <Column colMd={2} colLg={2}>
+            <Button kind='secondary' href="#">Lorem Ipsum</Button>
+          </Column>
+        </Row>
       </Main>
 
-      <div className={posts}>
-        {BlogSection}
-      </div>
-
       {RequestDemoSection}
-      {QuoteSection}
+      {SnapContent}
+      {ArticleContent}
+      {SignUpContent}
       <BackToTopBtn />
     </Layout>
   );

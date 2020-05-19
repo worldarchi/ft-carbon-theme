@@ -1,14 +1,7 @@
 import React from 'react';
-import styled from '@emotion/styled';
-import { Grid, Row, Column } from 'gatsby-theme-carbon';
+import { Row, Column } from 'gatsby-theme-carbon';
 
 import { column, row, grid } from './Banner.module.scss';
-
-const StyledGrid = styled(Grid)`
-  max-width: 100%;
-  background-image: url(${props => props.image});
-  background-position: ${props => (props.position ? props.position : 'center')};
-`;
 
 const HomepageBanner = ({ image, position, renderText }) => (
   <div className={grid} position={position}>

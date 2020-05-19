@@ -1,0 +1,38 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+.signup-content {
+  padding: $layout-04 $layout-07;
+  background: $ui-01;
+}
+
+.signup-content h1 {
+  @include carbon--type-style('productive-heading-06');
+  margin-bottom: $spacing-07;
+  text-align: center;
+}
+
+.signup-content h2 {
+  @include carbon--type-style('productive-heading-05');
+  margin-bottom: $layout-05;
+  text-align: center;
+}
+
+.signup-form {
+  margin: auto;
+  // margin: $spacing-01 $layout-07;
+  border: 1px solid $ui-05;
+  padding: $layout-05;
+  width: 622px;
+}
+
+.signup-row {
+  margin-top: $spacing-06;
+}
+
+.signup-form h3 {
+  @include carbon--type-style('productive-heading-04');
+}

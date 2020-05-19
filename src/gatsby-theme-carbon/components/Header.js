@@ -1,26 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import {
   Header as ShellHeader,
-  HeaderMenuButton,
-  SkipToContent,
-  HeaderGlobalBar,
-  HeaderGlobalAction,
 } from 'carbon-components-react';
-import { AppSwitcher20, Close20 } from '@carbon/icons-react';
-import cx from 'classnames';
 
 import {
   header,
-  switcherButtonOpen,
-  skipToContent,
   headerName,
   navLink,
   navLists,
   navLeftBorder,
-  collapsed,
-  headerButton,
-  switcherButton,
 } from './Header.module.scss';
 
 const Header = ({ children }) => {

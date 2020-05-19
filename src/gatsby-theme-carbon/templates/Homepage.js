@@ -7,10 +7,8 @@ import {
 } from "gatsby-theme-carbon";
 import HomepageTemplate from "./HomepageTemplate";
 import {
-  calloutLink,
   banner,
   rowText,
-  mainContent,
 } from "./Homepage.module.scss";
 import {
   blogContent,
@@ -28,14 +26,15 @@ import {
   requestDemoContent,
   requestDemoRow,
   requestDemoActions,
-  contactUs,
 } from "./QuoteContent.module.scss";
 
 import { Button } from "carbon-components-react";
 
-import Carbon from "../../images/carbon.jpg";
-import Freight1 from "../../images/freight1.png";
 import { Close20 } from "@carbon/icons-react";
+
+import { SnapContent } from "./HomepageComponents/SnapContent";
+import { ArticleContainer } from "./HomepageComponents/ArticleContainer";
+import { SignUpContainer } from "./HomepageComponents/SignUpContainer";
 
 const FirstLeftText = () => (
   <span className={rowText}>
@@ -161,6 +160,9 @@ const customProps = {
   BlogSection: <BlogContent />,
   QuoteSection: <QuoteContent />,
   RequestDemoSection: <RequestDemoContent />,
+  SnapContent: <SnapContent />,
+  ArticleContent: <ArticleContainer />,
+  SignUpContent: <SignUpContainer />,
 };
 
 // spreading the original props gives us props.children (mdx content)
