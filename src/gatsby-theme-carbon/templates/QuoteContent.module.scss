@@ -6,7 +6,7 @@ $carbon--theme: $carbon--theme--g90;
 
 .quoteContent {
   height: 600px;
-  padding: 150px 200px;
+  padding: $layout-05 $layout-07;
 
   background-color: $ui-03;
 }
@@ -35,8 +35,16 @@ $carbon--theme: $carbon--theme--g90;
 }
 
 .requestDemoContent {
-  padding: 75px 120px;
+  padding: $layout-05 $layout-03;
   background: $ui-background;
+
+  @include carbon--breakpoint('md') {
+    padding: $layout-05 $layout-05 !important;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding: $layout-05 $layout-07 !important;
+  }
 }
 
 .requestDemoRow h1 {
@@ -60,4 +68,5 @@ $carbon--theme: $carbon--theme--g90;
 
 .requestDemoRow a {
   margin-left: $spacing-05;
+  margin-bottom: $spacing-05;
 }

@@ -5,8 +5,15 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .snap-content {
-  padding: $layout-06;
+  padding: $layout-05 $layout-03;
   background: $ui-02;
+  @include carbon--breakpoint('md') {
+    padding: $layout-05 $layout-05;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding: $layout-05 $layout-06;
+  }
 }
 
 .snap-content h1 {
@@ -26,5 +33,12 @@ $carbon--theme: $carbon--theme--g90;
 
 .snap-card {
   margin-bottom: $layout-05;
-  padding-right: $layout-05;
+  padding-right: $layout-01;
+  @include carbon--breakpoint('md') {
+    padding-right: $layout-03;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding-right: $layout-05;
+  }
 }

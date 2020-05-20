@@ -10,9 +10,36 @@ $carbon--theme: $carbon--theme--g90;
   display: block;
 }
 
+.bannerContainer {
+  background: $ui-background;
+  padding: $layout-04 $layout-01;
+
+  @include carbon--breakpoint('md') {
+    padding: $layout-07 $layout-01;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding: $layout-07 $layout-01;
+  }
+}
+
 .banner {
   color: $ui-05;
-  padding-left: 20%;
+  padding: $layout-02;
+
+  @include carbon--breakpoint('md') {
+    padding-left: $layout-04;
+    padding-right: 0px;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding-left: $layout-06;
+    padding-right: 0px;
+  }
+}
+
+.bannerContainer {
+
 }
 
 .banner h1 {
@@ -51,11 +78,21 @@ $carbon--theme: $carbon--theme--g90;
 
 .main-content {
   text-align: center;
-  padding: $layout-07 !important;
-  padding-top: $layout-05 !important;
-  padding-bottom: $layout-05 !important;
+  padding: $layout-05 $layout-03 !important;
   background: $ui-01;
   color: $ui-05;
+
+  @include carbon--breakpoint('md') {
+    padding: $layout-05 $layout-05 !important;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding: $layout-05 $layout-07 !important;
+  }
+}
+
+.main-content a {
+  margin-bottom: $spacing-05;
 }
 
 .main-content h1 {

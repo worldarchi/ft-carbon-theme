@@ -9,6 +9,7 @@ import HomepageTemplate from "./HomepageTemplate";
 import {
   banner,
   rowText,
+  bannerContainer
 } from "./Homepage.module.scss";
 import {
   blogContent,
@@ -63,6 +64,17 @@ const BannerText = () => (
       Management System, Accounting, Dispatching, ELD, & more.
     </p>
     <Button href="#" kind='secondary'>Start free trial</Button>
+  </div>
+);
+
+const BannerContainer = () => (
+  <div className={bannerContainer}>
+    <Row>
+      <Column colSm={12} colMd={6} colLg={6}>
+        <BannerText />
+      </Column>
+      <Column colSm={12} colMd={6} colLg={6}></Column>
+    </Row>
   </div>
 );
 
@@ -134,11 +146,11 @@ const QuoteContent = () => (
 const RequestDemoContent = () => (
   <div className={requestDemoContent}>
     <Row className={requestDemoRow}>
-      <Column colMd={6} colLg={6}>
+      <Column colSm={12} colMd={6} colLg={6}>
         <h1>Ready to get started?</h1>
         <h2>Sign up or contact us</h2>
       </Column>
-      <Column className={requestDemoActions} colMd={6} colLg={6}>
+      <Column className={requestDemoActions} colSm={12} colMd={6} colLg={6}>
         <Button href="#" kind='secondary'>Request Demo</Button>
         <Button href="#" kind='tertiary'>Contact Us</Button>
       </Column>
@@ -148,7 +160,8 @@ const RequestDemoContent = () => (
 
 
 const customProps = {
-  Banner: <HomepageBanner renderText={BannerText} />,
+  // Banner: <HomepageBanner className={bannerContainer} renderText={BannerText} />,
+  Banner: <BannerContainer />,
   FirstCallout: (
     <HomepageCallout
       backgroundColor="#16a085"

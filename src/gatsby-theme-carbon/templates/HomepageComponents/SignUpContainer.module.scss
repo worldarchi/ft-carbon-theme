@@ -5,8 +5,15 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .signup-content {
-  padding: $layout-04 $layout-07;
+  padding: $layout-04 $layout-02;
   background: $ui-01;
+  @include carbon--breakpoint('md') {
+    padding: $layout-04 $layout-05;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding: $layout-04 $layout-07;
+  }
 }
 
 .signup-content h1 {
@@ -35,4 +42,15 @@ $carbon--theme: $carbon--theme--g90;
 
 .signup-form h3 {
   @include carbon--type-style('productive-heading-04');
+}
+
+@media (max-width: 768px) {
+
+  .signup-form {
+    margin: auto;
+    // margin: $spacing-01 $layout-07;
+    border: 1px solid $ui-05;
+    padding: $layout-03;
+    width: 100%;
+  }
 }

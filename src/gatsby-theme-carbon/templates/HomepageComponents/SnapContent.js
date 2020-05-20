@@ -16,19 +16,19 @@ export const SnapCard = (props) => (
 export const SnapContent = () => (
   <div className={snapContent}>
     <Row>
-      <Column colMd={6} colLg={6}>
+      <Column colSm={12} colMd={6} colLg={6}>
         <h1>Lorem Ipsum snap photos and share like never before</h1>
       </Column>
-      <Column colMd={6} colLg={6}></Column>
+      <Column colSm={12} colMd={6} colLg={6}></Column>
 
-      <Column colMd={6} colLg={6}>
+      <Column colSm={12} colMd={6} colLg={6}>
         <SnapCard
           heading="Lorem Ipsum"
           buttonText="Lorem Ipsum"
           content="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
         />
       </Column>
-      <Column colMd={6} colLg={6}>
+      <Column colSm={12} colMd={6} colLg={6}>
         <SnapCard
           heading="Lorem Ipsum"
           buttonText="Lorem Ipsum"
@@ -36,14 +36,14 @@ export const SnapContent = () => (
         />
       </Column>
 
-      <Column colMd={6} colLg={6}>
+      <Column colSm={12} colMd={6} colLg={6}>
         <SnapCard
           heading="Lorem Ipsum"
           buttonText="Lorem Ipsum"
           content="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
         />
       </Column>
-      <Column colMd={6} colLg={6}>
+      <Column colSm={12} colMd={6} colLg={6}>
         <SnapCard
           heading="Lorem Ipsum"
           buttonText="Lorem Ipsum"

@@ -10,26 +10,23 @@ export const SignUpContainer = () => (
         
     <div className={signupForm}>
       <h3>Sign up for a free account</h3>
-      <Row className={signupRow}>
-        <Column colMd={6} colLg={6}>
+      <Row>
+        <Column colMd={12} colLg={6} className={signupRow}>
           <TextInput placeholder="First Name" />
         </Column>
-        <Column colMd={6} colLg={6}>
+        <Column colMd={12} colLg={6} className={signupRow}>
           <TextInput placeholder="Last Name" />
         </Column>
-      </Row>
-      <Row className={signupRow}>
-        <Column colMd={12} colLg={12}>
+
+        <Column colMd={12} colLg={12} className={signupRow}>
           <TextInput placeholder="Email address" />
         </Column>
-      </Row>
-      <Row className={signupRow}>
-        <Column colMd={12} colLg={12}>
+
+        <Column colMd={12} colLg={12} className={signupRow}>
           <TextInput placeholder="Create password" />
         </Column>
-      </Row>
-      <Row className={signupRow}>
-        <Column colMd={12} colLg={12}>
+
+        <Column colMd={12} colLg={12} className={signupRow}>
           <Button>Register</Button>
         </Column>
       </Row>

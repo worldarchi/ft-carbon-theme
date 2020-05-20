@@ -33,7 +33,7 @@ const CustomFooter = () => <div className={footerContent}>
         </div>
       </div>
     </Column>
-    <Column colMd={2} colLg={2} colXl={1} className={footerButtonCol}>
+    <Column colSm={12} colMd={2} colLg={2} colXl={1} className={footerButtonCol}>
       <div><Button>Register</Button></div>
       <div><Button kind="tertiary">
         Log In

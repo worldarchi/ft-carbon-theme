@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import {
   Header as ShellHeader,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
 } from 'carbon-components-react';
 
 import {
@@ -10,9 +12,27 @@ import {
   navLink,
   navLists,
   navLeftBorder,
+
+  switcherButtonOpen,
+  skipToContent,
+  collapsed,
+  headerButton,
+  switcherButton,
+
+  globalBar,
 } from './Header.module.scss';
+import { AppSwitcher20, Close20 } from '@carbon/icons-react';
+import cx from 'classnames';
+import MediaQuery from 'react-responsive'
+import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 
 const Header = ({ children }) => {
+  const {
+    leftNavIsOpen,
+    toggleNavState,
+    switcherIsOpen,
+    searchIsOpen,
+  } = useContext(NavContext);
 
   return (
     <>
@@ -62,6 +82,23 @@ const Header = ({ children }) => {
             Contact
           </Link>
         </div>
+        
+        <HeaderGlobalBar className={globalBar}>
+          <HeaderGlobalAction
+            className={cx(headerButton, switcherButton, {
+              [switcherButtonOpen]: switcherIsOpen,
+            })}
+            aria-label="Switch"
+            onClick={() => {
+              toggleNavState('switcherIsOpen');
+              toggleNavState('searchIsOpen', 'close');
+              toggleNavState('leftNavIsOpen', 'close');
+            }}
+          >
+            {switcherIsOpen ? <Close20 /> : <AppSwitcher20 />}
+          </HeaderGlobalAction>
+        </HeaderGlobalBar>
+
       </ShellHeader>
     </>
   );

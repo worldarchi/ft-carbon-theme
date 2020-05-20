@@ -115,3 +115,15 @@ $carbon--theme: $carbon--theme--g90;
   width: 100%;
   display: inline-block;
 }
+
+@media (max-width: 673px) {
+  .footerButtonCol button {
+    float: left;
+    // margin-left: $layout-01;
+  }
+
+  .footerButtonCol {
+    margin-top: $layout-03;
+    display: flex;
+  }
+}
