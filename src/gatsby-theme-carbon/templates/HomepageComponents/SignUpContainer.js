@@ -3,10 +3,13 @@ import { signupContent, signupForm, signupRow } from "./SignUpContainer.module.s
 import { Row, Column } from "gatsby-theme-carbon";
 import { Button, TextInput } from "carbon-components-react";
 
-export const SignUpContainer = () => (
+export const SignUpContainer = ({
+  title,
+  subTitle
+}) => (
   <div className={signupContent}>
-    <h1>Lorem Ipsum to take a free trial?</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h2>
+    <h1>{title}</h1>
+    <h2>{subTitle}</h2>
         
     <div className={signupForm}>
       <h3>Sign up for a free account</h3>

@@ -6,11 +6,7 @@ import {
   Column,
 } from "gatsby-theme-carbon";
 import HomepageTemplate from "./HomepageTemplate";
-import {
-  banner,
-  rowText,
-  bannerContainer
-} from "./Homepage.module.scss";
+import { banner, rowText, bannerContainer } from "./Homepage.module.scss";
 import {
   blogContent,
   blogContentCol1,
@@ -49,36 +45,43 @@ const FirstLeftText = () => (
   </span>
 );
 
-const FirstRightText = () => (
-  <div>
-  </div>
-);
+const FirstRightText = () => <div></div>;
 
-const BannerText = () => (
+const BannerText = ({ captionText, contentText, buttonText }) => (
   <div className={banner}>
-    <h1>Next Generation EDI</h1>
+    <h1>{captionText}</h1>
     <p>
-      From an Industry Exclusive Automated Detention Claims & Same-day Invoicing
-      to Automated Price Quoting and Dispatching, enable a seamless
-      communications platform that integrates with your Transportation
-      Management System, Accounting, Dispatching, ELD, & more.
+      {contentText}
     </p>
-    <Button href="#" kind='secondary'>Start free trial</Button>
+    <Button href="#" kind="secondary">
+      {buttonText}
+    </Button>
   </div>
 );
 
-const BannerContainer = () => (
+export const BannerContainer = ({
+  children,
+  captionText,
+  contentText,
+  buttonText,
+}) => (
   <div className={bannerContainer}>
     <Row>
       <Column colSm={12} colMd={6} colLg={6}>
-        <BannerText />
+        <BannerText
+          captionText={captionText}
+          contentText={contentText}
+          buttonText={buttonText}
+        />
       </Column>
-      <Column colSm={12} colMd={6} colLg={6}></Column>
+      <Column colSm={12} colMd={6} colLg={6}>
+        {children}
+      </Column>
     </Row>
   </div>
 );
 
-const BlogCard = ({headerText, contentText, actionText}) => (
+const BlogCard = ({ headerText, contentText, actionText }) => (
   <div>
     <h1>{headerText}</h1>
     <p>{contentText}</p>
@@ -115,11 +118,12 @@ const BlogContent = () => (
       <Column className={blogContentCol1} colMd={3} colLg={3}></Column>
       <Column className={blogContentCol2} colMd={9} colLg={9}>
         <h4>
-          Port Operations available at the Port of Oakland and Port of Los Angeles
+          Port Operations available at the Port of Oakland and Port of Los
+          Angeles
         </h4>
         <h1>
-          We are the only provider that completely automates detention, invoicing,
-          & more.
+          We are the only provider that completely automates detention,
+          invoicing, & more.
         </h1>
         <h3>WE PUT OUR CUSTOMERS FIRST</h3>
       </Column>
@@ -134,30 +138,35 @@ const QuoteContent = () => (
       <Column colMd={6} colLg={6}>
         <h1>Stop Deadheading & Detention</h1>
         <h3>Start Automating & Getting Paid, today.</h3>
-        <p>The [Freight Trust] Platform fits into our existing solution set and exceeds our expectations. It has fulfilled all of our digital freight requirements, seamlessly. Phone and Text support has been superb.</p>
+        <p>
+          The [Freight Trust] Platform fits into our existing solution set and
+          exceeds our expectations. It has fulfilled all of our digital freight
+          requirements, seamlessly. Phone and Text support has been superb.
+        </p>
       </Column>
       <Column colMd={1} colLg={1}></Column>
-      <Column colMd={5} colLg={5}>
-      </Column>
+      <Column colMd={5} colLg={5}></Column>
     </Row>
   </div>
-)
+);
 
-const RequestDemoContent = () => (
+export const RequestDemoContent = ({
+  text1,
+  text2,
+  children
+}) => (
   <div className={requestDemoContent}>
     <Row className={requestDemoRow}>
       <Column colSm={12} colMd={6} colLg={6}>
-        <h1>Ready to get started?</h1>
-        <h2>Sign up or contact us</h2>
+        <h1>{text1}</h1>
+        <h2>{text2}</h2>
       </Column>
       <Column className={requestDemoActions} colSm={12} colMd={6} colLg={6}>
-        <Button href="#" kind='secondary'>Request Demo</Button>
-        <Button href="#" kind='tertiary'>Contact Us</Button>
+        {children}
       </Column>
     </Row>
   </div>
-)
-
+);
 
 const customProps = {
   // Banner: <HomepageBanner className={bannerContainer} renderText={BannerText} />,

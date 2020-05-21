@@ -13,43 +13,17 @@ export const SnapCard = (props) => (
   </div>
 );
 
-export const SnapContent = () => (
+export const SnapContent = ({
+  captionText,
+  children
+}) => (
   <div className={snapContent}>
     <Row>
       <Column colSm={12} colMd={6} colLg={6}>
-        <h1>Lorem Ipsum snap photos and share like never before</h1>
+        <h1>{captionText}</h1>
       </Column>
       <Column colSm={12} colMd={6} colLg={6}></Column>
-
-      <Column colSm={12} colMd={6} colLg={6}>
-        <SnapCard
-          heading="Lorem Ipsum"
-          buttonText="Lorem Ipsum"
-          content="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-        />
-      </Column>
-      <Column colSm={12} colMd={6} colLg={6}>
-        <SnapCard
-          heading="Lorem Ipsum"
-          buttonText="Lorem Ipsum"
-          content="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-        />
-      </Column>
-
-      <Column colSm={12} colMd={6} colLg={6}>
-        <SnapCard
-          heading="Lorem Ipsum"
-          buttonText="Lorem Ipsum"
-          content="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-        />
-      </Column>
-      <Column colSm={12} colMd={6} colLg={6}>
-        <SnapCard
-          heading="Lorem Ipsum"
-          buttonText="Lorem Ipsum"
-          content="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est."
-        />
-      </Column>
     </Row>
+    {children}
   </div>
 );

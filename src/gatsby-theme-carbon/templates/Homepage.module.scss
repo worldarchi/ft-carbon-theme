@@ -4,6 +4,11 @@
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
+.main-content {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .callout-link {
   @include carbon--type-style('body-long-02');
   margin-top: $spacing-06;
@@ -38,10 +43,6 @@ $carbon--theme: $carbon--theme--g90;
   }
 }
 
-.bannerContainer {
-
-}
-
 .banner h1 {
   @include carbon--type-style('productive-heading-07');
 }
@@ -74,36 +75,6 @@ $carbon--theme: $carbon--theme--g90;
     color: #666666;
     font-weight: 300;
   }
-}
-
-.main-content {
-  text-align: center;
-  padding: $layout-05 $layout-03 !important;
-  background: $ui-01;
-  color: $ui-05;
-
-  @include carbon--breakpoint('md') {
-    padding: $layout-05 $layout-05 !important;
-  }
-
-  @include carbon--breakpoint('lg') {
-    padding: $layout-05 $layout-07 !important;
-  }
-}
-
-.main-content a {
-  margin-bottom: $spacing-05;
-}
-
-.main-content h1 {
-  text-align: center;
-  @include carbon--type-style('productive-heading-04');
-}
-
-.main-content p {
-  @include carbon--type-style('productive-heading-03');
-  margin-top: $spacing-08;
-  margin-bottom: $spacing-08;
 }
 
 .blogSection {

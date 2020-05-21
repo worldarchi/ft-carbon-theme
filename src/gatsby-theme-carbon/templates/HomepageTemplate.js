@@ -17,6 +17,7 @@ const Homepage = ({
   ArticleContent,
   SignUpContent,
   pageContext,
+  children,
 }) => {
   const { frontmatter = {}, titleType } = pageContext;
   const { title, description, keywords } = frontmatter;
@@ -29,40 +30,9 @@ const Homepage = ({
       homepage
       theme="dark"
     >
-      {Banner}
-      <Main className={mainContent}>
-        <h1>
-          Next Generation EDI for Cutting Edge Logistics
-        </h1>
-        <p>
-          From 100% Complete Digital Workflow to Supporting Paper-based documents, the Freight Trust Platform works for 100% of your customers, even hazardous material shippments or ITAR Export Controlled Goods.
-        </p>
-        <Row>
-          <Column colMd={2} colLg={2}>
-            <Button kind='secondary' href="#">Lorem Ipsum</Button>
-          </Column>
-          <Column colMd={2} colLg={2}>
-            <Button kind='secondary' href="#">Lorem Ipsum</Button>
-          </Column>
-          <Column colMd={2} colLg={2}>
-            <Button kind='secondary' href="#">Lorem Ipsum</Button>
-          </Column>
-          <Column colMd={2} colLg={2}>
-            <Button kind='secondary' href="#">Lorem Ipsum</Button>
-          </Column>
-          <Column colMd={2} colLg={2}>
-            <Button kind='secondary' href="#">Lorem Ipsum</Button>
-          </Column>
-          <Column colMd={2} colLg={2}>
-            <Button kind='secondary' href="#">Lorem Ipsum</Button>
-          </Column>
-        </Row>
-      </Main>
 
-      {RequestDemoSection}
-      {SnapContent}
-      {ArticleContent}
-      {SignUpContent}
+      <Main className={mainContent}>{children}</Main>
+
       <BackToTopBtn />
     </Layout>
   );

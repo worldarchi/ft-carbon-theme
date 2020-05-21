@@ -1,0 +1,35 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+.brands-content {
+  text-align: center;
+  padding: $layout-05 $layout-03 !important;
+  background: $ui-01;
+  color: $ui-05;
+
+  @include carbon--breakpoint('md') {
+    padding: $layout-05 $layout-05 !important;
+  }
+
+  @include carbon--breakpoint('lg') {
+    padding: $layout-05 $layout-07 !important;
+  }
+}
+
+.brands-content a {
+  margin-bottom: $spacing-05;
+}
+
+.brands-content h1 {
+  text-align: center;
+  @include carbon--type-style('productive-heading-04');
+}
+
+.brands-content p {
+  @include carbon--type-style('productive-heading-03');
+  margin-top: $spacing-08;
+  margin-bottom: $spacing-08;
+}
