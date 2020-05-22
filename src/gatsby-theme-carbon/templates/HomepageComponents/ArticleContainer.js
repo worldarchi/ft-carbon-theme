@@ -1,7 +1,6 @@
 import React from "react";
 import { articleContent } from "./ArticleContainer.module.scss";
-import { Row, Column, ArticleCard } from "gatsby-theme-carbon";
-import blueStripeImg from "../../../images/large-image.png"
+import { Row, Column } from "gatsby-theme-carbon";
 
 export const ArticleContainer = ({
   text1,

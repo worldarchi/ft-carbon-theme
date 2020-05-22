@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomepageBanner, HomepageCallout, Row, Column } from 'gatsby-theme-carbon';
+import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import Carbon from '../../images/carbon.jpg';
 
 import Layout from 'gatsby-theme-carbon/src/components/Layout';
@@ -8,14 +8,8 @@ import Main from 'gatsby-theme-carbon/src/components/Main';
 import BackToTopBtn from 'gatsby-theme-carbon/src/components/BackToTopBtn';
 
 import { mainContent } from './Homepage.module.scss';
-import { Button } from "carbon-components-react";
 
 const Homepage = ({
-  Banner,
-  RequestDemoSection,
-  SnapContent,
-  ArticleContent,
-  SignUpContent,
   pageContext,
   children,
 }) => {

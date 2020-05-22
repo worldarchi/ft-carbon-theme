@@ -15,51 +15,6 @@ $carbon--theme: $carbon--theme--g90;
   display: block;
 }
 
-.bannerContainer {
-  background: $ui-background;
-  padding: $layout-04 $layout-01;
-
-  @include carbon--breakpoint('md') {
-    padding: $layout-07 $layout-01;
-  }
-
-  @include carbon--breakpoint('lg') {
-    padding: $layout-07 $layout-01;
-  }
-}
-
-.banner {
-  color: $ui-05;
-  padding: $layout-02;
-
-  @include carbon--breakpoint('md') {
-    padding-left: $layout-04;
-    padding-right: 0px;
-  }
-
-  @include carbon--breakpoint('lg') {
-    padding-left: $layout-06;
-    padding-right: 0px;
-  }
-}
-
-.banner h1 {
-  @include carbon--type-style('productive-heading-07');
-}
-
-.banner p {
-
-  @include carbon--type-style('productive-heading-03');
-
-  margin-top: $spacing-09;
-  margin-bottom: $spacing-06;
-}
-
-.banner a {
-
-  margin-top: $spacing-09;
-}
-
 .row-text {
   h1 {
     font-size: 30px;

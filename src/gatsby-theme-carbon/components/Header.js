@@ -14,8 +14,6 @@ import {
   navLeftBorder,
 
   switcherButtonOpen,
-  skipToContent,
-  collapsed,
   headerButton,
   switcherButton,
 
@@ -23,15 +21,12 @@ import {
 } from './Header.module.scss';
 import { AppSwitcher20, Close20 } from '@carbon/icons-react';
 import cx from 'classnames';
-import MediaQuery from 'react-responsive'
 import NavContext from 'gatsby-theme-carbon/src/util/context/NavContext';
 
 const Header = ({ children }) => {
   const {
-    leftNavIsOpen,
     toggleNavState,
     switcherIsOpen,
-    searchIsOpen,
   } = useContext(NavContext);
 
   return (

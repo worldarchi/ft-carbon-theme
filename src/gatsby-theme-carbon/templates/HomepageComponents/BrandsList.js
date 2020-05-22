@@ -1,7 +1,5 @@
-import React, { Children } from "react";
+import React from "react";
 import { brandsContent } from "./BrandsList.module.scss";
-import { Button } from "carbon-components-react";
-import { Row, Column } from "gatsby-theme-carbon";
 
 export const BrandsList = ({
   captionText,
