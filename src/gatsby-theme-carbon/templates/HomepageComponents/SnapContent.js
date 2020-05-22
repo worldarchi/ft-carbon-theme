@@ -5,22 +5,22 @@ import { Row, Column } from "gatsby-theme-carbon";
 
 export const SnapCard = (props) => (
   <div className={snapCard}>
-    <h2>{props.heading}</h2>
+    <h2>{props.title}</h2>
     <p>{props.content}</p>
     <Button href="a" kind="tertiary">
-      {props.buttonText}
+      {props.buttonLabel}
     </Button>
   </div>
 );
 
 export const SnapContent = ({
-  captionText,
+  title,
   children
 }) => (
   <div className={snapContent}>
     <Row>
       <Column colSm={12} colMd={6} colLg={6}>
-        <h1>{captionText}</h1>
+        <h1>{title}</h1>
       </Column>
       <Column colSm={12} colMd={6} colLg={6}></Column>
     </Row>

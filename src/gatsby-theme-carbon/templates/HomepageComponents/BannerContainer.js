@@ -6,31 +6,31 @@ import {
 import { Button } from "carbon-components-react";
 import { banner, bannerContainer } from "./BannerContainer.module.scss";
 
-const BannerText = ({ captionText, contentText, buttonText }) => (
+const BannerText = ({ title, content, buttonLabel }) => (
   <div className={banner}>
-    <h1>{captionText}</h1>
+    <h1>{title}</h1>
     <p>
-      {contentText}
+      {content}
     </p>
     <Button href="#" kind="secondary">
-      {buttonText}
+      {buttonLabel}
     </Button>
   </div>
 );
 
 export const BannerContainer = ({
   children,
-  captionText,
-  contentText,
-  buttonText,
+  title,
+  content,
+  buttonLabel,
 }) => (
   <div className={bannerContainer}>
     <Row>
       <Column colSm={12} colMd={6} colLg={6}>
         <BannerText
-          captionText={captionText}
-          contentText={contentText}
-          buttonText={buttonText}
+          title={title}
+          content={content}
+          buttonLabel={buttonLabel}
         />
       </Column>
       <Column colSm={12} colMd={6} colLg={6}>

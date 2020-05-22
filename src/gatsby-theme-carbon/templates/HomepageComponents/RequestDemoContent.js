@@ -10,15 +10,15 @@ import {
 } from "./RequestDemoContent.module.scss";
 
 export const RequestDemoContent = ({
-  text1,
-  text2,
+  title,
+  subTitle,
   children
 }) => (
   <div className={requestDemoContent}>
     <Row className={requestDemoRow}>
       <Column colSm={12} colMd={6} colLg={6}>
-        <h1>{text1}</h1>
-        <h2>{text2}</h2>
+        <h1>{title}</h1>
+        <h2>{subTitle}</h2>
       </Column>
       <Column className={requestDemoActions} colSm={12} colMd={6} colLg={6}>
         {children}

@@ -2,16 +2,16 @@ import React from "react";
 import { brandsContent } from "./BrandsList.module.scss";
 
 export const BrandsList = ({
-  captionText,
-  contentText,
+  title,
+  content,
   children
 }) => (
   <div className={brandsContent}>
     <h1>
-      {captionText}
+      {title}
     </h1>
     <p>
-      {contentText}
+      {content}
     </p>
     {children}
   </div>
