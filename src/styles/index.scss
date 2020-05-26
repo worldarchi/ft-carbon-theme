@@ -21,3 +21,7 @@ $carbon--theme: $carbon--theme--g90;
 body {
   // font-family: IBM Plex Sans;
 }
+
+.container:not(.container--homepage) .bx--grid {
+  max-width: unset;
+}

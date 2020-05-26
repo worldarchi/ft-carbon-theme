@@ -18,7 +18,7 @@ export default class Example extends PureComponent {
             </linearGradient>
           </defs>
           <CartesianGrid vertical={false}/>
-          <XAxis dataKey="date" tick={{ fill: "#f4f4f4" }}/>
+          <XAxis dataKey="date" tick={{ fill: "#f4f4f4" }} interval={10}/>
           {/* <YAxis /> */}
           <Tooltip wrapperStyle={{background: "#000000"}} contentStyle={{background: "#525252"}} />
           <Area type="linear" dataKey="price" stroke="#27D974" fillOpacity={1} fill="url(#colorPrice)" />
@@ -32,7 +32,7 @@ export default class Example extends PureComponent {
                   <stop offset="95%" stopColor="#27D974" stopOpacity={0}/>
                 </linearGradient>
               </defs>
-              <CartesianGrid horizontal={false}/>
+              <CartesianGrid horizontal={false} verticalPoints={[50, 200, 350, 500, 650]}/>
               <Area type="linear" dataKey="price" stroke="#27D974" fillOpacity={1} fill="url(#colorPrice)" />
             </AreaChart>
           </Brush>
