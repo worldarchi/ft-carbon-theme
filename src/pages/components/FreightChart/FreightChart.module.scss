@@ -1,0 +1,40 @@
+@import "@carbon/themes/scss/themes";
+
+// Use the gray 10 theme
+$carbon--theme: $carbon--theme--g90;
+@include carbon--theme();
+
+.chart-container {
+  background: $ui-01;
+  width: 800px;
+  margin: auto;
+  padding: $spacing-09 $spacing-07;
+  padding-right: $spacing-02;
+
+  border: 1px solid $text-03;
+  color: $text-02;
+
+  .recharts-wrapper {
+    width: 100%;
+  }
+
+  .recharts-brush {
+    margin-top: $spacing-07;
+  }
+
+  .recharts-cartesian-axis-tick {
+    color: $text-01;
+  }
+
+  .recharts-brush {
+    fill: none !important;
+    rect {
+      fill: none !important;
+    }
+  }
+}
+
+.tooltip-wrapper {
+  border: 1px solid $text-03;
+  background: $ui-03;
+}

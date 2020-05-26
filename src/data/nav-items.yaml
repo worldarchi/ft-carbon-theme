@@ -1,6 +1,9 @@
 - title: Managed EDI
   pages:
     - path: /getting-started
+- title: Freight
+  pages:
+    - path: /freight
 # - title: Demo
 #   pages:
 #     - path: /demo
