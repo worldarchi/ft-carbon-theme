@@ -6,5 +6,6 @@ $carbon--theme: $carbon--theme--g90;
 
 .main-content {
   background: $ui-background;
-  padding: $layout-05 $layout-05 !important;
+  padding-top: $layout-05 !important;
+  padding-bottom: $layout-05 !important;
 }

@@ -9,6 +9,7 @@ const Default = ({ pageContext, children, location, Title }) => {
   const { frontmatter = {}, relativePagePath, titleType } = pageContext;
   const { tabs, title, theme, description, keywords } = frontmatter;
 
+  console.log('Default', title, Title, pageContext, frontmatter)
   return (
     <Layout
       tabs={tabs}
@@ -19,6 +20,7 @@ const Default = ({ pageContext, children, location, Title }) => {
       pageKeywords={keywords}
       titleType={titleType}
     >
+      <PageHeader title={Title ? <Title /> : title} label="label" tabs={tabs} />
       <Main className={mainContent}>
         {children}
       </Main>

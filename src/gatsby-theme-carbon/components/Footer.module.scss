@@ -11,6 +11,14 @@ $carbon--theme: $carbon--theme--g90;
   color: $text-04;
 }
 
+.footerContentDefault {
+  // padding-left: calc(25% + 2rem);
+
+  @include carbon--breakpoint('lg') {
+    padding-left: calc(25% + 2rem);
+  }
+}
+
 .footerContent h1 {
 
   @include carbon--type-style('productive-heading-03');

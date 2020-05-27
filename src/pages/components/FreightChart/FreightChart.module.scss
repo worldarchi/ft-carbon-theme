@@ -6,10 +6,8 @@ $carbon--theme: $carbon--theme--g90;
 
 .chart-container {
   background: $ui-01;
-  width: 800px;
-  margin: auto;
-  padding: $spacing-09 $spacing-07;
-  padding-right: $spacing-02;
+  // width: 800px;
+  padding: $spacing-07 $spacing-05;
 
   border: 1px solid $text-03;
   color: $text-02;
@@ -34,7 +32,72 @@ $carbon--theme: $carbon--theme--g90;
   }
 }
 
+.main-chart {
+  margin-bottom: $layout-05;
+
+  .chart-container {
+    width: 800px;
+  }
+}
+
+.pricing-charts {
+  width: 800px;
+  .chart-container {
+    width: 100%;
+  }
+}
+
 .tooltip-wrapper {
   border: 1px solid $text-03;
   background: $ui-03;
+}
+
+.chart-control {
+  h6 {
+    @include carbon--type-style('productive-heading-02');
+    text-align: center;
+    margin-bottom: $spacing-03;
+  }
+
+  h3 {
+    @include carbon--type-style('productive-heading-03');
+    margin-bottom: $spacing-03;
+    margin-left: $spacing-03;
+    color: $text-04;
+  }
+
+  .range-control {
+    display: inline-block;
+    span {
+      display: inline-block;
+      padding: $spacing-03;
+      color: $text-04;
+      @include carbon--type-style('productive-heading-01');
+      cursor: pointer;
+    }
+  
+    span:hover {
+      color: $text-02;
+      background: $ui-04;
+    }
+  }
+
+  .date-control {
+    float: right;
+    display: inline-block;
+    width: 300px;
+
+    span {
+      padding-top: 5px;
+      padding-right: 10px;
+    }
+    input {
+      width: 120px;
+      height: 25px;
+    }
+
+    .bx--form-item {
+      max-width: 120px;
+    }
+  }
 }

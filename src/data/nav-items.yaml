@@ -1,53 +1,36 @@
 - title: Managed EDI
   pages:
-    - path: /getting-started
+    - path: /
 - title: Freight
   pages:
     - path: /freight
-# - title: Demo
-#   pages:
-#     - path: /demo
-# - title: Gallery
-#   pages:
-#     - path: /gallery
-# - title: Contributions
-#   pages:
-#     - path: /contributions
-- title: Solutions
+- title: GLOBAL
   pages:
-    - title: Cloud EDI
-      path: /guides/configuration
-    - title: Carriers
-      path: /guides/MDX
-    - title: Shippers
-      path: /guides/shadowing
-    - title: Brokers/Freight Forwarders
-      path: /guides/styling
-- title: Blockchain
+    - title: Global Container Index
+      path: /freight
+- title: PACIFIC
   pages:
-    - title: Network
-      path: /components/Aside
-    - title: Block Exploer
-      path: /components/Caption
-    - title: Status
-      path: /components/code-blocks
-    - title: MasterNodes
-      path: /components/DoDontExample
-- title: Blog
+    - title: China/East Asia to North America West Coast
+      path: /freight
+    - title: North America West Coast to China/East Asia
+      path: /freight
+    - title: China/East Asia to North America East Coast
+      path: /freight
+    - title: North America East Coast  to China/East Asia
+      path: /freight
+- title: SUEZ
   pages:
-    - title: Announcements
-      path: /components/DoDontRow
-    - title: Guides
-      path: /components/FeatureCard
-    - title: Blockchain
-      path: /components/FeedbackDialog
-    - title: Corporate
-      path: /components/GifPlayer
-- title: Contact
+    - title: China/East Asia to North America East Coast
+      path: /freight
+    - title: North America East Coast  to China/East Asia
+      path: /freight
+
+- title: ATLANTIC
   pages:
-    - title: Contact
-      path: /components/Grid
-    - title: FreightTrustNet
-      path: /components/ImageCard
-    - title: Telegram
-      path: /components/ImageGallery
+    - title: North America West Coast to China/East Asia
+      path: /freight
+    - title: China/East Asia to North America East Coast
+      path: /freight
+    - title: North America East Coast  to China/East Asia
+      path: /freight
+

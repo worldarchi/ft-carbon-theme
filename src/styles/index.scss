@@ -22,6 +22,10 @@ body {
   // font-family: IBM Plex Sans;
 }
 
+.bx--side-nav {
+  background-color: var(--cds-ui-05, #161616);
+}
+
 .container:not(.container--homepage) .bx--grid {
   max-width: unset;
 }

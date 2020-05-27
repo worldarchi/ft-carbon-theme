@@ -14,10 +14,6 @@ const links = [
     title: 'Telegram',
     href: 'https://t.me/freighttrust',
   },
-  {
-    title: 'Request more Information',
-    href: '/guides/configuration',
-  },
 ];
 
 // shouldOpenNewTabs: true if outbound links should open in a new tab
