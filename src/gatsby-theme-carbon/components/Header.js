@@ -48,9 +48,9 @@ const Header = ({ children }) => {
           </Link>
           <Link
             className={navLink}
-            to="/"
+            to="/freight"
           >
-            Solutions
+            Freight
           </Link>
           <Link
             className={navLink}

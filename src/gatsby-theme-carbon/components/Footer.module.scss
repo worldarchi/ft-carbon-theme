@@ -8,7 +8,9 @@ $carbon--theme: $carbon--theme--g90;
   padding: $layout-04 $layout-05;
 
   background: $ui-02;
-  color: $text-04;
+  color: $text-01;
+
+  background: black;
 }
 
 .footerContentDefault {
@@ -52,7 +54,7 @@ $carbon--theme: $carbon--theme--g90;
   cursor: pointer;
   display: block;
 
-  color: $text-04;
+  color: $text-01;
 
   @include carbon--type-style('body-short-01');
   margin-top: $spacing-04;

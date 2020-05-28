@@ -6,7 +6,7 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 // import Carbon styles here
-@import "carbon-components/scss/globals/scss/styles.scss";
+// @import "carbon-components/scss/globals/scss/styles.scss";
 
 @media (min-width: 66rem) {
   .container--homepage .bx--grid {

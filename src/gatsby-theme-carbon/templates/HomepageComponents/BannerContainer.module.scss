@@ -5,8 +5,9 @@ $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
 .bannerContainer {
-  background: $ui-background;
+  background: #000;
   padding: $layout-04 $layout-02;
+  color: $text-04;
 
   @include carbon--breakpoint('md') {
     padding: $layout-07 $layout-06;

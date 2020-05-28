@@ -6,7 +6,9 @@ $carbon--theme: $carbon--theme--g90;
 
 .article-content {
   padding: $layout-05 $layout-03;
-  background: $ui-01;
+  // background: $ui-01;
+  background: $ui-05;
+  color: $inverse-01;
   @include carbon--breakpoint('md') {
     padding: $layout-05 $layout-05;
   }

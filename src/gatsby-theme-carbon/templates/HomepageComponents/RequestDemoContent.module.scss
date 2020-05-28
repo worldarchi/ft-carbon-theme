@@ -7,6 +7,8 @@ $carbon--theme: $carbon--theme--g90;
 .requestDemoContent {
   padding: $layout-05 $layout-03;
   background: $ui-background;
+  // background: $ui-05;
+  // color: $inverse-01;
 
   @include carbon--breakpoint('md') {
     padding: $layout-05 $layout-05 !important;
@@ -19,6 +21,7 @@ $carbon--theme: $carbon--theme--g90;
 
 .requestDemoRow h1 {
   text-align: center;
+  // color: $text-03;
   color: $text-04;
   @include carbon--type-style('productive-heading-05');
 }
@@ -26,6 +29,7 @@ $carbon--theme: $carbon--theme--g90;
 .requestDemoRow h2 {
   text-align: center;
   text-align: center;
+  // color: $text-05;
   color: $text-02;
   @include carbon--type-style('productive-heading-05');
 }
