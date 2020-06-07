@@ -6,10 +6,9 @@ import Main from 'gatsby-theme-carbon/src/components/Main';
 import {mainContent} from './Default.module.scss';
 
 const Default = ({ pageContext, children, location, Title }) => {
-  const { frontmatter = {}, relativePagePath, titleType } = pageContext;
+  const { frontmatter = {}, titleType } = pageContext;
   const { tabs, title, theme, description, keywords } = frontmatter;
 
-  console.log('Default', title, Title, pageContext, frontmatter)
   return (
     <Layout
       tabs={tabs}

@@ -12,9 +12,10 @@ import { mainContent } from './Homepage.module.scss';
 const Homepage = ({
   pageContext,
   children,
+  _frontmatter,
 }) => {
-  const { frontmatter = {}, titleType } = pageContext;
-  const { title, description, keywords } = frontmatter;
+  const { titleType } = pageContext;
+  const { title, description, keywords } = _frontmatter;
   return (
     <Layout
       pageTitle={title}

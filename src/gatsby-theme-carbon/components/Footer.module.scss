@@ -59,6 +59,7 @@ $carbon--theme: $carbon--theme--g90;
   @include carbon--type-style('body-short-01');
   margin-top: $spacing-04;
   margin-left: $spacing-04;
+  margin-right: $spacing-04;
 }
 
 .footerContent h5 {
@@ -110,20 +111,31 @@ $carbon--theme: $carbon--theme--g90;
 .footerLastRow {
   padding-top: $spacing-06;
   padding-bottom: $spacing-08;
+
+  span {
+    margin-right: $spacing-06;
+  }
 }
 
 .footerFollowSection{
+  height: 100%;
   display: flex;
   align-items: flex-end;
 }
 
 .footerFollowSection p {
-  float: right;
+  // float: right;
+  width: 100%;
+  text-align: right;
 }
 
 .footerButtonCol div {
   width: 100%;
   display: inline-block;
+}
+
+.footerDiectoryRow {
+  padding-top: $layout-01;
 }
 
 @media (max-width: 673px) {
@@ -135,5 +147,11 @@ $carbon--theme: $carbon--theme--g90;
   .footerButtonCol {
     margin-top: $layout-03;
     display: flex;
+  }
+
+  .footerFollowSection p {
+    // float: right;
+    width: 100%;
+    text-align: left;
   }
 }

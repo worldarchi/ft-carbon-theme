@@ -1,0 +1,149 @@
+import HomepageTemplate from "gatsby-theme-carbon/src/templates/Homepage";
+import {
+  ArticleContainer,
+  BrandsList,
+  SnapContent,
+  SnapCard,
+  SignUpContainer,
+  BannerContainer,
+  RequestDemoContent,
+} from "gatsby-theme-carbon/src/templates/HomepageComponents";
+import { Button } from "carbon-components-react";
+
+export default HomepageTemplate;
+
+<BannerContainer 
+  title="Seamless & Cost Effective EDI Onboarding"
+  content="Increasingly complex multi-enterprise systems need a scalable, flexible, performant fault tolerant network. "
+  buttonLabel="Start free trial"
+>
+
+![Dark article layout mockup](./components/images/Article_05.png)
+
+</BannerContainer>
+
+<BrandsList
+  title="Eliminate increasingly complex multi-enterprise systems, today"
+  content="To stand apart in today’s hyper-connected, global economy, you need to radically simplify connectivity between people, systems and data that matter to your business. Our xEDI Enterprise ready system manages an increasingly complex, multi-enterprise ecosystem from disparate systems, processes, policies and tools. "
+>
+
+
+  <Row>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary" href="#">
+        Blu Jay Solutions
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary" href="#">
+        PC Miler 
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary" href="#">
+        Samsara
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary" href="#">
+        SAFER/IFTA
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary" href="#">
+        Customs
+      </Button>
+    </Column>
+    <Column colMd={2} colLg={2}>
+      <Button kind="secondary" href="#">
+        Loadboards
+      </Button>
+    </Column>
+  </Row>
+</BrandsList>
+
+
+
+
+<DataTable
+  filterRows={function noRefCheck(){}}
+  headers={[
+    {
+      header: 'Name',
+      key: 'name'
+    },
+    {
+      header: 'Protocol',
+      key: 'protocol'
+    },
+    {
+      header: 'Port',
+      key: 'port'
+    },
+    {
+      header: 'Rule',
+      key: 'rule'
+    },
+    {
+      header: 'Attached Groups',
+      key: 'attached_groups'
+    },
+    {
+      header: 'Status',
+      key: 'status'
+    }
+  ]}
+  locale="en"
+  overflowMenuOnHover
+  render={function noRefCheck(){}}
+  rows={[
+    {
+      id: 'aperak',
+      name: 'APERAK',
+      cells: [
+        {
+          id: 'D93A',
+          value: true,
+        },
+        {
+          id: 'D94A',
+          value: false,
+        },
+        {
+          id: 'D94B',
+          value: false,
+        },
+        {
+          id: 'D95A',
+          value: true,
+        },
+        {
+          id: 'D00A',
+          value: true,
+        },
+        {
+          id: 'D00B',
+          value: true,
+        },
+        {
+          id: 'D01A',
+          value: true,
+        },
+        {
+          id: 'D01B',
+          value: false,
+        },
+      ],
+      D93A: true,
+      D94A: false,
+      D94B: false,
+      D95A: true,
+      D00A: true,
+      D00B: true,
+      D01A: true,
+      D01B: false,
+    },
+  size={null}
+  sortRow={function noRefCheck(){}}
+  translateWithId={function noRefCheck(){}}
+/>

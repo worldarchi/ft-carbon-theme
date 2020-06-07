@@ -7,7 +7,6 @@ import {
   CartesianGrid,
   Tooltip,
   Brush,
-  Label,
   BarChart,
   LineChart,
   Bar,
@@ -20,7 +19,6 @@ import {
   pricingRangeChart,
   pricingTrendChart,
   chartContainer,
-  tooltipWrapper,
   chartControl,
   dateControl,
   rangeControl,
@@ -28,7 +26,7 @@ import {
 import { Row, Column } from "gatsby-theme-carbon";
 import { TextInput } from "carbon-components-react";
 
-export default class Example extends PureComponent {
+class FreightChart extends PureComponent {
   render() {
     return (
       <div className={charts}>
@@ -475,3 +473,5 @@ export default class Example extends PureComponent {
     },
   ];
 }
+
+export default FreightChart;

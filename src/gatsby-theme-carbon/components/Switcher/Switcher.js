@@ -56,12 +56,12 @@ const DefaultChildren = () => {
 
   return (
     <>
-      <SwitcherLink href="#">Managed EDI</SwitcherLink>
-      <SwitcherLink href="#">Solutions</SwitcherLink>
-      <SwitcherLink href="#">Blockchain</SwitcherLink>
-      <SwitcherLink href="#">Corporate</SwitcherLink>
-      <SwitcherLink href="#">Blog</SwitcherLink>
-      <SwitcherLink href="#">Contact</SwitcherLink>
+      <SwitcherLink href="#top">Managed EDI</SwitcherLink>
+      <SwitcherLink href="#top">Solutions</SwitcherLink>
+      <SwitcherLink href="#top">Blockchain</SwitcherLink>
+      <SwitcherLink href="#top">Corporate</SwitcherLink>
+      <SwitcherLink href="#top">Blog</SwitcherLink>
+      <SwitcherLink href="#top">Contact</SwitcherLink>
     </>
   );
 };

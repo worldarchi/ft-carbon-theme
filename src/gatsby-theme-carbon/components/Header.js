@@ -42,39 +42,33 @@ const Header = ({ children }) => {
           <div className={navLeftBorder}></div>
           <Link
             className={navLink}
-            to="/"
-          >
-            Managed EDI
-          </Link>
-          <Link
-            className={navLink}
             to="/freight"
           >
-            Freight
+            EDI
           </Link>
           <Link
             className={navLink}
             to="/"
           >
-            Blockchain
+            Features
           </Link>
           <Link
             className={navLink}
             to="/"
           >
-            Corporate
+            Integrations
           </Link>
           <Link
             className={navLink}
             to="/"
           >
-            Blog
+            Solutions
           </Link>
           <Link
             className={navLink}
             to="/"
           >
-            Contact
+            Pricing
           </Link>
         </div>
         

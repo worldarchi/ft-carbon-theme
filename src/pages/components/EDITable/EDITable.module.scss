@@ -1,0 +1,111 @@
+.edi-table {
+  // width: 100% !important;
+  table-layout: fixed;
+
+  .BaseTable__table.BaseTable__table-main {
+    // min-width: 100% !important;
+    width: auto !important;
+  }
+
+  .bx--data-table-header {
+    width: 100%;
+  }
+
+  td {
+    border-left: 1px solid #ccc;
+    border-top: none !important;
+    border-bottom: none !important;
+    // background-color: white;
+    padding: 3px !important;
+  }
+
+  tbody {
+    line-height: unset !important;
+  }
+
+  tr {
+    height: 20px !important;
+  }
+
+  .edi-name-cell {
+    text-align: left;
+    border-left: none;
+    width: auto;
+
+    div {
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .edi-table-cell {
+    text-align: center;
+
+    .edi-cell-rect {
+      background-color: #ccc;
+      width: 13px;
+      height: 13px;
+      margin: auto;
+    }
+  }
+
+  .edi-check-box-cell {
+    text-align: center;
+    vertical-align: top;
+    label {
+      width: 0px !important;
+      margin: auto;
+    }
+    div {
+      margin: 0px;
+    }
+  }
+
+  .edi-check-box-cell > div {
+    height: 24px !important;
+  }
+
+  .edi-empty-cell {
+    div {
+      width: 14px;
+    }
+  }
+
+  .edi-class-row {
+    text-align: center;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  .edi-control-row {
+    .edi-name-cell {
+      padding-top: 6px !important;
+    }
+  }
+
+  .edi-class-text-cell {
+    div {
+      min-width: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .edit-header-row {
+    border-bottom: 1px solid #ccc !important;
+  }
+}
+
+.edi-table.bx--data-table tr {
+  height: 20px;
+}
+
+.edi-table-container {
+  max-width: 100%;
+  display: inline-block;
+  overflow-x: auto;
+  padding: 20px;
+  background-color: white;
+}

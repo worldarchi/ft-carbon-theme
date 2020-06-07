@@ -12,7 +12,7 @@ const BannerText = ({ title, content, buttonLabel }) => (
     <p>
       {content}
     </p>
-    <Button href="#" kind="secondary">
+    <Button href="#top" kind="secondary">
       {buttonLabel}
     </Button>
   </div>
